@@ -1,0 +1,238 @@
+
+.post-detail-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.back-link {
+  background: none;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  transition: color var(--transition);
+  cursor: pointer;
+  border: none;
+}
+
+.back-link:hover {
+  color: var(--accent-gold);
+}
+
+.post-detail {
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.post-detail-header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--border-primary);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.post-detail-country {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.detail-flag {
+  font-size: 2.5rem;
+}
+
+.detail-country-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-country-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.detail-government {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.post-detail-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.detail-type {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid;
+  border-radius: var(--radius-xl);
+}
+
+.detail-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.post-detail-status {
+  padding: 0.75rem 2rem;
+  border-bottom: 1px solid var(--border-primary);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.status-approved {
+  color: var(--accent-green);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status-pending {
+  color: var(--accent-orange);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status-rejected {
+  color: var(--accent-red);
+  font-size: 0.85rem;
+}
+
+.rejection-reason {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(239, 68, 68, 0.05);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.ai-moderation-badge {
+  font-size: 0.75rem;
+  color: var(--accent-blue);
+  background: rgba(59, 130, 246, 0.08);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+}
+
+.post-detail-title {
+  padding: 2rem 2rem 0;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.post-detail-content {
+  padding: 1.5rem 2rem 2rem;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.post-detail-content p {
+  margin-bottom: 1rem;
+}
+
+.post-detail-content p:last-child {
+  margin-bottom: 0;
+}
+
+.post-detail-footer {
+  padding: 1.5rem 2rem;
+  border-top: 1px solid var(--border-primary);
+  background: rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.post-detail-signature {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.signature-line {
+  width: 120px;
+  height: 1px;
+  background: var(--accent-gold);
+  margin-bottom: 0.25rem;
+}
+
+.signature-text {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.signature-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.post-detail-actions {
+  flex-shrink: 0;
+}
+
+.post-not-found {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+}
+
+.post-not-found h2 {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.post-not-found p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .post-detail-header {
+    padding: 1.25rem;
+  }
+  .post-detail-title {
+    padding: 1.5rem 1.25rem 0;
+    font-size: 1.3rem;
+  }
+  .post-detail-content {
+    padding: 1rem 1.25rem 1.5rem;
+  }
+  .detail-flag {
+    font-size: 2rem;
+  }
+  .post-detail-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .post-detail-signature {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .post-detail-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
